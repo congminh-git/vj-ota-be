@@ -136,7 +136,6 @@ class RestClient {
   }
 
   async putAuth(url: string, data: any, apikey: string) {
-    console.log(data);
     try {
       const response = await axios
         .create({
