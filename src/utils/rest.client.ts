@@ -70,6 +70,7 @@ class RestClient {
         return new ResponseData(400, '', responseData.data);
       }
     } catch (error: any) {
+      console.log(error);
       AuthService.storeToken('');
       return new ResponseData(error.response.status, error.response.data, {});
     }
@@ -100,6 +101,7 @@ class RestClient {
         return new ResponseData(400, '', response.data);
       }
     } catch (error: any) {
+      console.log(error);
       AuthService.storeToken('');
       return new ResponseData(error.response.status, error.response.data, {});
     }
@@ -124,6 +126,7 @@ class RestClient {
         return new ResponseData(400, '', response.data);
       }
     } catch (error: any) {
+      console.log(error);
       return new ResponseData(error.response.status, error.response.data, {});
     }
   }
@@ -154,6 +157,7 @@ class RestClient {
         return new ResponseData(400, '', response.data);
       }
     } catch (error: any) {
+      console.log(error);
       return new ResponseData(error.response.status, error.response.data, {});
     }
   }
@@ -188,6 +192,7 @@ class RestClient {
         );
       }
     } catch (error: any) {
+      console.log(error);
       AuthService.storeToken('');
       return new ResponseData(error.response.status, error.response.data, {});
     }
@@ -211,6 +216,7 @@ class RestClient {
 
       return response.data;
     } catch (error: any) {
+      console.log(error);
       AuthService.storeToken('');
       return new ResponseData(error.response.status, error.response.data, {});
     }
