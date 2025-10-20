@@ -23,7 +23,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
             Authorization: `Bearer ${token}`,
           },
         })
@@ -56,7 +56,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
             Authorization: `Bearer ${token}`,
           },
         })
@@ -90,7 +90,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
             Authorization: `Bearer ${token}`,
           },
         })
@@ -118,7 +118,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
           },
         })
         .post(process.env.END_POINT + url, null, { auth: data });
@@ -144,7 +144,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
           },
         })
         .put(
@@ -178,7 +178,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
             Authorization: `Bearer ${token}`,
           },
         })
@@ -215,7 +215,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO"
+            service: "WEBDEMO",
             Authorization: `Bearer ${token}`,
           },
         })
