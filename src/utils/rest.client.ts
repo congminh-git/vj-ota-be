@@ -23,7 +23,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
             Authorization: `Bearer ${token}`,
           },
         })
@@ -46,7 +46,12 @@ class RestClient {
   }
 
   // get data with params
-  async getWithParams(url: string, pas: AxiosRequestConfig, token: string, apikey: string) {
+  async getWithParams(
+    url: string,
+    pas: AxiosRequestConfig,
+    token: string,
+    apikey: string,
+  ) {
     try {
       // await this.createAxiosInstance();
       // await this.setupAxiosRetry();
@@ -56,7 +61,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
             Authorization: `Bearer ${token}`,
           },
         })
@@ -90,7 +95,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
             Authorization: `Bearer ${token}`,
           },
         })
@@ -118,7 +123,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
           },
         })
         .post(process.env.END_POINT + url, null, { auth: data });
@@ -143,7 +148,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
           },
         })
         .put(
@@ -177,7 +182,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
             Authorization: `Bearer ${token}`,
           },
         })
@@ -214,7 +219,7 @@ class RestClient {
           headers: {
             'Content-Type': 'application/json',
             apikey: apikey,
-            service: "WEBDEMO",
+            service: 'WEBDEMO',
             Authorization: `Bearer ${token}`,
           },
         })

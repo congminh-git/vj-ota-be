@@ -20,6 +20,7 @@ import { LowFareOptionsModule } from './modules/lowFareOptions/lowFareOptions.mo
 import { AuthModule } from './modules/auth/auth.module';
 import { GpayModule } from './modules/gpay/gpay.module';
 import { MasterDataModule } from './modules/masterData/masterData.module';
+import { TransactionModule } from './modules/transactions/transaction.module';
 
 @Module({
   imports: [
@@ -42,6 +43,7 @@ import { MasterDataModule } from './modules/masterData/masterData.module';
     ReservationsModule,
     GpayModule,
     MasterDataModule,
+    TransactionModule,
   ],
   controllers: [AppController],
   providers: [AppService],
