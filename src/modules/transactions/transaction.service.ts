@@ -8,7 +8,7 @@ export class TransactionService {
   constructor(private readonly httpService: HttpService) {}
 
   async postReservationPaymentTransaction(transactionID, token, apikey) {
-    const url = `/reservations/${transactionID}/paymentTransactions`;
+    const url = `/transactions/${transactionID}/paymentTransactions`;
     try {
       return await restClient.post(url, {}, token, apikey);
     } catch (error) {
